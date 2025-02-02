@@ -14,7 +14,6 @@ ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.102', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://*.preview.app.github.dev']
 
 INSTALLED_APPS = [
-    'test'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

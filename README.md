@@ -26,12 +26,7 @@ Django Ledger is a powerful financial management system built on the Django Web 
 - Django Admin integration
 - Built-in Entity Management UI
 
-## Getting Involved
 
-- **Feature Requests/Bug Reports**: Open an issue in the repository
-- **For software customization, advanced features and consulting services**: 
-[Contact us](https://www.miguelsanda.com/work-with-me/) or email msanda@arrobalytics.com
-- **Contribute**: See our [contribution guidelines](https://github.com/arrobalytics/django-ledger/blob/master/Contribute.md)
 
 ## Who Should Contribute?
 
@@ -153,7 +148,7 @@ for production environments. If you want to contribute to the project perform th
 2. Clone the repo from github and CD into project.
 
 ```shell
-git clone https://github.com/arrobalytics/django-ledger.git && cd django-ledger
+git clone https://github.com/SANJAI-s0/DP_financial-management.system.git && cd DP_financial-management.system
 ```
 
 3. Install PipEnv, if not already installed:

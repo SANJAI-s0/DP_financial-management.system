@@ -1,5 +1,8 @@
 import os
+from dj_database_url import parse
 from pathlib import Path
+
+from django.conf.global_settings import DATABASES
 
 from django_ledger.settings import DJANGO_LEDGER_GRAPHQL_SUPPORT_ENABLED
 
@@ -70,16 +73,18 @@ WSGI_APPLICATION = 'dev_env.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sql_django_fm',
-        'USER': 'sql_django_fm_user',
-        'PASSWORD': 'mOgoHu7duM4G5935K2pryYuW7JJZUlz5',
-        'HOST': 'dpg-cud2t4l2ng1s73bbnhn0-a',
-        'PORT': '5432'
-    }
-}
+DATABASES['default'] = parse("postgresql://sql_django_fm_user:mOgoHu7duM4G5935K2pryYuW7JJZUlz5@dpg-cud2t4l2ng1s73bbnhn0-a.oregon-postgres.render.com/sql_django_fm")
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'sql_django_fm',
+#        'USER': 'sql_django_fm_user',
+#        'PASSWORD': 'mOgoHu7duM4G5935K2pryYuW7JJZUlz5',
+#        'HOST': 'dpg-cud2t4l2ng1s73bbnhn0-a.oregon-postgres.render.com',
+#        'PORT': '5432'
+#    }
+#}
 
 # postgresql://sql_django_fm_user:mOgoHu7duM4G5935K2pryYuW7JJZUlz5@dpg-cud2t4l2ng1s73bbnhn0-a.oregon-postgres.render.com/sql_django_fm
 
